@@ -1,0 +1,148 @@
+
+body {
+    margin:  0;
+    background-color: white;
+    font-family: 'Work sans', sans-serif;
+    font-weight: 300;
+
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: top;
+
+}
+
+header { background: white;
+    padding-bottom: none;
+}
+header::after {
+    content:    "";
+    display:    table;
+    clear:      both;
+}
+
+h1 { 
+    float: left;
+    
+}
+h1 a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+}
+
+nav a{ 
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: black;
+
+}
+
+#para { 
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+    
+}
+
+h2 { 
+    margin:0 auto;
+    font-size: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+#dunder{
+    margin: 40 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#dunder img {
+    display: inline-block;
+}
+
+
+@keyframes slider {
+
+
+
+20% {
+    left: 0;
+}
+
+25% {
+    left:-100%;
+}
+
+45%{
+    left: -100%;
+}
+
+50% {
+    left: -200%;
+}
+
+70%{
+    left: -200%;
+}
+75%{
+    left: -300%;
+}
+95%{
+    left: -300%;
+}
+100%{
+    left: -400%;
+}
+}
+
+#slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#slider figure img {
+    width: 20%;
+    
+
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;  
+    font-size: 0;
+    animation: 20s slider infinite;
+}
