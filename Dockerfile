@@ -10,7 +10,7 @@ RUN tar xvf Python-2.7.9.tar.xz && cd Python-2.7.9 && ./configure --enable-share
 RUN bash
 RUN echo "/usr/local/lib/" >> /etc/ld.so.conf
 RUN ldconfig
-Run python get-pip.py
+RUN python get-pip.py
 RUN pip install pyinstaller==3.6
 RUN pip install requests
 WORKDIR /root
